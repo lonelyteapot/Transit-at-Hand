@@ -1,0 +1,48 @@
+{
+    "folders": [
+        {
+            "name": "root",
+            "path": "./"
+        },
+        {
+            "name": "backend",
+            "path": "./backend"
+        }
+    ],
+    "extensions": {
+        "recommendations": [
+            "editorconfig.editorconfig",
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "ms-python.black-formatter",
+            "ms-python.isort",
+            "charliermarsh.ruff"
+        ]
+    },
+    "settings": {
+        // File explorer
+        "files.exclude": {
+            "backend": true
+        },
+        // Presentation
+        "editor.rulers": [
+            88
+        ],
+        // Auto-formatting
+        "black-formatter.args": [],
+        "isort.args": [],
+        "editor.formatOnSave": true,
+        "ruff.organizeImports": false,
+        // Testing
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestEnabled": true,
+        // Python-specific
+        "[python]": {
+            // Auto-formatting
+            "editor.defaultFormatter": "ms-python.black-formatter",
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": true
+            }
+        }
+    }
+}
